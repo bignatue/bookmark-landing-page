@@ -49,10 +49,11 @@
           <img class="img-fluid" src="images/illustration-hero.svg" alt="hero">
         </div>
       </div>
-    </div>
-    <svg class="blue-bg-right">
-      <rect x="0" y="0" rx="200" ry="200" fill="#6699FF" /> 
-    </svg>    
+    </div> 
+    <svg class="svg-right">
+      <rect x="65%" y="0" rx="100" ry="100" width="100%" height="300" style="fill:#6699FF;" />
+      Sorry, your browser does not support inline SVG.
+    </svg>     
   </header>
   
   <section>
@@ -64,18 +65,18 @@
     </div>
   </section>
 
-  <section>
+  <section class="illustration-wrapper">
     <div class="container">
-      <div class="nav">
+      <div class="nav-links">
         <div class="illustration">
           <ul>
-            <li class="active"><a href="#">Simple Bookmarking</a></li>
-            <li><a href="#">Speedy Searching</a></li>
-            <li><a href="#">Easy Sharing</a></li>
+            <li class="active"><a href="#tab1">Simple Bookmarking</a></li>
+            <li><a href="#tab2">Speedy Searching</a></li>
+            <li><a href="#tab3">Easy Sharing</a></li>
           </ul>
         </div>
         <div class="nav-content">
-          <div class="flex">
+          <div id="tab1" class="flex tab-content active">
             <div>
               <img class="img-fluid" src="images/illustration-features-tab-1.svg" alt="features">
             </div>
@@ -86,9 +87,9 @@
             </div>  
           </div>
            
-          <div class="flex hide">
+          <div id="tab2" class="flex tab-content hide">
             <div>
-              <img src="images/illustration-features-tab-2.svg" alt="features">
+              <img class="img-fluid" src="images/illustration-features-tab-2.svg" alt="features">
             </div>
             <div>
               <h2>Intelligent search</h2>
@@ -96,23 +97,23 @@
               <a href="#" class="btn btn-blue">More Info</a>
             </div>
           </div>
-          <div class="flex hide">
+          <div id="tab3" class="flex tab-content hide">
             <div>
-              <img src="images/illustration-features-tab-3.svg" alt="features">
+              <img class="img-fluid" src="images/illustration-features-tab-3.svg" alt="features">
             </div>
             <div>
               <h2>Share your bookmarks</h2>
               <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
               <a href="#" class="btn btn-blue">More Info</a>
             </div>
-          </div>
-           
-          <svg class="blue-bg-left">
-            <rect x="0" y="0" rx="200" ry="200" fill="#6699FF" /> 
-          </svg> 
-        </div>      
-      </div>
+          </div>           
+        </div>    
+      </div> 
     </div>
+    <svg class="svg-left">
+      <rect x="-100" y="0" rx="100" ry="100" width="50%" height="300" style="fill:#6699FF;" />
+      Sorry, your browser does not support inline SVG.
+    </svg> 
   </section>
 
   <section>

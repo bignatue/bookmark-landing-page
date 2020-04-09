@@ -21,4 +21,22 @@ $(document).ready(function(){
   $("#faqs-question4").click(function(){
     $("#faqs-answer4").toggleClass("show").delay("fast");
   });
+
+  /** illustration  */
+  $('.illustration > ul > li > a').click(function(event) {
+    event.preventDefault();
+    var active_tab_selector = $('.illustration > ul > li.active > a').attr('href');
+    var actived_nav = $('.illustration > ul > li.active');
+    actived_nav.removeClass('active');
+
+    $(this).parents('li').addClass('active');
+    //hide displaying tab content
+    $(active_tab_selector).removeClass('active');
+    $(active_tab_selector).addClass('hide');
+    //show target tab content
+    var target_tab_selector = $(this).attr('href');
+    $(target_tab_selector).removeClass('hide');
+    $(target_tab_selector).addClass('active');
+  });
+
 });

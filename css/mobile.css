@@ -5,9 +5,19 @@
   body {
     text-align: center;
   }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+
   nav .flex {
     margin: 0;
-    padding: 2rem;
+    padding: 1rem;
   }
   nav .flex .logo {
     text-align: left;
@@ -57,17 +67,34 @@
       box-shadow: none;
       display: inline-block;
     }
+    .btn {
+      padding: .8rem .5rem;
+    }
+        
+    .header .svg-right {
+      width: 200%; 
+      top: 10%;
+      height: 200px;
+      right: 0;
+    }
+    .header .svg-right rect {
+      height: 200px;
+    }
+    .illustration ul > * {
+      padding: 1rem 0;
+    }
+    .illustration-wrapper .svg-left {
+      width: 180%;
+      bottom: 40%;
+      height: 200px;
+      left: 0;
+    }
+    .illustration-wrapper .svg-left rect {
+      height: 200px;
+    }
 
-   .blue-bg-right {
-     height: 50%;
-     width: 100%;
-     top: 15%;
-   }
-   .blue-bg-right rect {
-     height: 80%;
-   }
    .header .flex > div:nth-of-type(1) {
-     padding: 0 2rem; 
+     padding: 0 1rem; 
    }
    .header .flex > div:nth-of-type(2) {
      margin-bottom: 5rem; 
@@ -77,8 +104,18 @@
     flex-direction: row;
     flex-wrap: wrap;
    }
+   .buttons a, .buttons .btn {
+    padding:.5rem;
+    margin: .5rem .2rem 0 0;
+   }
    .features {
-     padding: 0 2rem;
+     padding: 0 1rem;
+   }
+   .nav-content div:nth-of-type(2) {
+    padding-left: 0;
+   }
+   .illustration {
+     width: 100%;
    }
    .illustration ul {
     flex-direction: column;
@@ -92,25 +129,19 @@
    .nav-content .flex > div:nth-of-type(1) {
     margin-bottom: 5rem;  
    }
-   .blue-bg-left {
-     left: -30%;
-     height: 70%;
-     width: 105%;
-     bottom: 20%; 
-   }
-   .blue-bg-left rect {
-     height: 70%;
-   }
    .download {
-     padding: 2rem;
+     width: 100%;
+     padding: 1rem;
      margin: 2rem 0;
    }
    .browser-logos {
+    margin: 0;
     flex-direction: column; 
    }
    .browser-logos .card {
-    width: 80%;
-    margin: 0 0 5rem;
+    width: 90%;
+    margin: 0 0 4rem;
+    padding: 1rem 1rem 3rem;
    }
    .browser-logos .card:nth-of-type(3) {
     margin-top: 0;
@@ -130,6 +161,10 @@
   }
   .question .flex > h4:nth-of-type(1) {
     flex: 5;
+  }
+  .contact-wrapper .contact {
+    max-width: 100%;
+    padding: 1rem; 
   }
   .contact-wrapper .contact .flex {
     flex-direction: column;
