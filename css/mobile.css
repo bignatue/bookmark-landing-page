@@ -188,3 +188,13 @@
     margin: 1rem;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 5rem 0;
+  }
+  .header .svg-right {
+    bottom: 6rem;
+  }
+}
